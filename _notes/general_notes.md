@@ -5,14 +5,19 @@ Python Testing Frameworks:
 - robot framework
 - pytest (compatible with unittest)
 
-PyTest Benefits:
+**PyTest Benefits:**
 - test search
 - concurrency
 - code re-use
 - plugins
 
 Questions:
-- regression suit, soke suite, integration suite
+- regression suit, smoke suite, integration suite
+
+**DO NOT MANUALLY MAINTAIN TEST SUITES**
+    Organize tests in directories
+    Split them out
+    Don't comment out tests
 
 
 **Virtual Environment:**
@@ -32,3 +37,19 @@ collected 1 item
 test_widget.py .                                                         [100%]
 
 ============================== 1 passed in 0.01s ===============================
+
+test_ = tells pytest this is a test
+
+config file ->
+touch pytest.ini
+
+content ->
+
+[pytest]
+python_files = test_*
+python_classes = *Tests
+python_functions = test_*
+
+
+
+ 
