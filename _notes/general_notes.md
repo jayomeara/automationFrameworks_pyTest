@@ -13,4 +13,22 @@ PyTest Benefits:
 
 Questions:
 - regression suit, soke suite, integration suite
-- 
+
+
+**Virtual Environment:**
+
+jayomeara@jHack_01 bin % python3.10 -m venv ~/venvs/frameworkenv
+
+cd /Users/jayomeara/_code/automationFrameworks_pyTest/bin
+source activate
+
+deactivate
+
+============================= test session starts ==============================
+platform darwin -- Python 3.10.5, pytest-7.2.1, pluggy-1.0.0
+rootdir: /Users/jayomeara/_code/automationFrameworks_pyTest/bin
+collected 1 item                                                               
+
+test_widget.py .                                                         [100%]
+
+============================== 1 passed in 0.01s ===============================
