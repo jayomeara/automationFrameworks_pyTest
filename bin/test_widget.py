@@ -3,3 +3,6 @@ def test_widget_functions_as_expected():
 
 def test_widget_fails():
         assert False
+
+def some_convenience_function():
+        print("I do extra work")
