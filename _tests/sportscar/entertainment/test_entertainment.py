@@ -1,2 +1,2 @@
-def test_engine_functions_as_expected():
+def test_entertainment_functions_as_expected():
         assert True
