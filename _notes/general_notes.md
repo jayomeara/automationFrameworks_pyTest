@@ -19,6 +19,22 @@ Questions:
     Split them out
     Don't comment out tests
 
+--
+Markers:
+
+from pytest import mark
+
+@mark.engine
+def...
+
+ADD TO pytest.ini:
+markers = engine: mark a test as engine
+
+--
+
+**FIXTURES**
+Don't need to be imported - pytest does it automaticly
+
 
 **Virtual Environment:**
 
