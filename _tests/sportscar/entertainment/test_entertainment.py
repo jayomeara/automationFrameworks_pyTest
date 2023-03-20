@@ -1,7 +1,7 @@
 from pytest import mark
 
 @mark.ui
-@mark.entertainment
+@mark.skip
 def test_can_navigate_topage(chrome_browser):
         chrome_browser.get('http://motortrend.com/')
         assert True

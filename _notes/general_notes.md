@@ -35,6 +35,12 @@ markers = engine: mark a test as engine
 **FIXTURES**
 Don't need to be imported - pytest does it automaticly
 
+**Skips and Failures**
+    @mark.skip(reason="test")
+    mark skip and give reason
+run pytest arguments = -rs
+
+    @mark.xfail
 
 **Virtual Environment:**
 
