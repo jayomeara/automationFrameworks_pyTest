@@ -42,6 +42,11 @@ run pytest arguments = -rs
 
     @mark.xfail
 
+**Parameterize**
+- 
+
+
+
 **Virtual Environment:**
 
 jayomeara@jHack_01 bin % python3.10 -m venv ~/venvs/frameworkenv
