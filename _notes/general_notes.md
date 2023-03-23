@@ -12,7 +12,8 @@ Python Testing Frameworks:
 - plugins
 
 Questions:
-- regression suit, smoke suite, integration suite
+- regression suite, smoke suite, integration suite
+- Tox
 
 **DO NOT MANUALLY MAINTAIN TEST SUITES**
     Organize tests in directories
@@ -20,7 +21,7 @@ Questions:
     Don't comment out tests
 
 --
-Markers:
+**Markers:**
 
 from pytest import mark
 
@@ -33,7 +34,7 @@ markers = engine: mark a test as engine
 --
 
 **FIXTURES**
-Don't need to be imported - pytest does it automaticly
+Don't need to be imported - pytest does it automatically
 
 **Skips and Failures**
     @mark.skip(reason="test")
@@ -43,9 +44,25 @@ run pytest arguments = -rs
     @mark.xfail
 
 **Parameterize**
-- 
+- multiple parameters per test
+- fixtures
 
+**PYTEST-XDIST**
+– run tests at the same time
+- multiple threads and tests at same time
+- n option for number of threads (use -nauto)
+- via LoadScheduling
+- must write tests isolated - new user per test for example - allows parallelization - allows better bug tracking
 
+**Concurrent vs Parallel**
+- global interpreter lock
+- threads vs process (i/o bound vs cpu bound)
+- where is the slow down? external or logical(cpu?)
+- xdist uses processes and threads
+
+**Tox**
+- creates virtual environment automatically to run tests
+- maintains separate testing structure from the unit logic
 
 **Virtual Environment:**
 
